@@ -1,0 +1,54 @@
+.header{
+  padding: 14px 0 9px;
+  background: #fff;
+}
+.header-top{
+  display: flex;
+  justify-content: space-between;
+}
+.dashed{
+  border-bottom: 2px dotted #686a6f;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  color: #9a6531;
+  position: relative;
+  &:after{
+    content: '';
+    background: url(../img/logo-wave.png) no-repeat;
+    width: 160px;
+    height: 23px;
+    position: absolute;
+    top: 55px;
+    left: -54px;
+  }
+  &__name{
+    font-size: 26px;
+    margin: 0 0 0 18px;
+  }
+}
+
+.menu{
+  display: flex;
+  &__item{
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 48px;
+    svg{
+      flex-shrink: 0;
+    }
+    &__text{
+      color: #686a6f;
+      font-size: 16px;
+      line-height: 21px;
+      margin: -10px 0 0 12px;
+    }
+
+  }
+}
+
+.brown{
+  color: #864f30;
+}
