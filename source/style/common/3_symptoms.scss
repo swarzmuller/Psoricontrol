@@ -1,0 +1,142 @@
+.symptoms{
+  padding: 86px 0 0px;
+  position: relative;
+  &:before{
+    background: url("../img/top-vawe.png") center  no-repeat;
+    background-size: cover;
+    content: '';
+    height: 154px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -97px;
+  }
+  &:after{
+    background: url("../img/bottom-vawe.png") center  no-repeat;
+    background-size: cover;
+    content: '';
+    height: 105px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -88px;
+  }
+}
+.symptom{
+  display: flex;
+  justify-content: space-between;
+  margin: 49px 0 0;
+  position: relative;
+  z-index: 5;
+  &__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 270px;
+
+    &__number{
+      color: #2c2f35;
+      font-size: 60px;
+      font-weight: 300;
+      margin: 12px 0 0;
+      &:after{
+        height: 4px;
+        display: block;
+        margin: 10px auto 15px;
+        width: 70px;
+        content: "";
+        background: #e15433;
+      }
+    }
+    &__text{
+      color: #2c2f35;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+  .symptom__item__cont{
+    width: 100%;
+  }
+  .symptom__item-mt{
+    margin: 59px 0 0;
+  }
+}
+
+@media screen and (max-width: 1190px){
+  .symptoms:before,
+  .symptoms:after{
+    display: none;
+  }
+  .symptom__item img{
+    max-width: 100%;
+  }
+  .symptom__item {
+    width: 226px;
+  }
+  .symptom__item__number{
+    font-size: 33px;
+  }
+  .symptom__item__number:after{
+    margin: 8px auto;
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .symptom{
+    margin: 28px 0 0;
+  }
+  .symptom .symptom__item-mt{
+    margin: 0;
+  }
+  .symptom__item {
+    width: 173px;
+  }
+  .symptom__item__text{
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .symptom{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .symptom__item {
+    width: 217px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 479px){
+  .symptom__item{
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .symptom__item,
+  .symptom .symptom__item-mt{
+    margin: 10px 0;
+  }
+  .symptom__item img{
+    width: 100px;
+  }
+  .symptom__item__cont{
+    text-align: left;
+    margin: 0 0 0 9px;
+  }
+  .symptom__item__number{
+    font-size: 19px;
+    margin: 0;
+  }
+  .symptom__item__text {
+    font-size: 15px;
+  }
+  .symptom__item__number:after {
+    margin: 2px 0;
+  }
+
+}

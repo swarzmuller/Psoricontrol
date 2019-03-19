@@ -1,5 +1,5 @@
 .main{
-  padding: 40px 0 160px;
+  padding: 40px 0 176px;
   background: #fbfbfb url(../img/bgn.png) center no-repeat;
   background-size: cover;
   .wrapper{
@@ -46,6 +46,7 @@
   color: #262a31;
   font-weight: 500;
   margin: 0 21px 0 0;
+  flex-shrink: 0;
 }
 
 .list-text{
@@ -73,7 +74,8 @@
   display: flex;
   align-items: flex-end;
   position: absolute;
-  bottom: -393px;
+  z-index: 2;
+  bottom: -399px;
   left: -285px;
   width: 620px;
   height: 557px;
@@ -137,6 +139,121 @@
     height: 50px;
     background: #dbdbdb;
     margin: 0 16px;
+  }
+}
+
+@media screen and (max-width: 1199px){
+  .main-img .women {
+    width: 286px;
+    top: -54px;
+    left: -163px;
+  }
+  .main-info {
+    max-width: 482px;
+    margin: 5px 0 0;
+  }
+  .main-info__list{
+    margin: 11px 0 0 ;
+  }
+  .main-info__list{
+    font-size: 19px;
+  }
+  .list-text{
+    font-size: 21px;
+  }
+  .main-info__list .item{
+    margin: 0 0 15px;
+  }
+  .main-info__title{
+    font-size: 40px;
+  }
+  .main-pack img{
+    max-width: 100%;
+  }
+  .main-pack {
+    width: 345px;
+    height: auto;
+    bottom: -162px;
+    left: -325px;
+    background: none;
+  }
+}
+
+@media screen and (max-width: 1123px){
+  .main-img{
+    display: none;
+  }
+  .main-info__list{
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .main-info{
+    max-width: 660px;
+  }
+  .drop{
+    margin: 0 11px 0 0;
+  }
+  .main-info__list {
+    font-size: 17px;
+    justify-content: space-between;
+  }
+  .main-info__list .item{
+    width: 202px;
+  }
+  .main-info__title{
+    font-size: 35px;
+    line-height: 37px;
+    text-align: center;
+  }
+  .main-pack{
+    position: static;
+  }
+  .main .wrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+@media screen and (max-width: 639px) {
+  .main-info {
+    max-width: 440px;
+  }
+  .main-info__list{
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-info__list .item{
+    width: 324px;
+  }
+  .main-form{
+    margin: 0;
+  }
+  .form-pack{
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-pack{
+    position: relative;
+    left: calc(17% - 33px);
+    top: 0;
+    margin: 25px 0 20px;
+  }
+}
+
+@media screen and (max-width: 479px){
+  .main-info{
+    width: 100%;
+  }
+  .main-info__list .item{
+    width: 100%;
+  }
+  .main-info__list{
+    align-items: center;
+  }
+  .main-info__title {
+    font-size: 29px;
+    line-height: 34px;
   }
 }
 

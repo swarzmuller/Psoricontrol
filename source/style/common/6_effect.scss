@@ -1,0 +1,73 @@
+.effect{
+  padding: 141px 0 144px;
+  background: #f4f5f7 url("../img/bgn-1.png")  no-repeat;
+  background-size: cover;
+  background-position-y: 34px;
+  background-position-x: center;
+}
+
+.aloe{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #d9dee8;
+  margin: 14px 46px;
+  &__text-bg{
+    color: #2c2f35;
+    font-size: 80px;
+    font-weight: 900;
+    width: 371px;
+    line-height: 70px;
+    background: url("../img/aloe-text.jpg") no-repeat center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__img{
+    width: 271px;
+    height: 271px;
+    background: url("../img/aloe-circle.png") no-repeat center;
+    padding: 45px 0 0 0;
+    position: relative;
+    top: 27px;
+  }
+  &__text{
+    font-size: 24px;
+    color: #686c6f;
+    width: 363px;
+    padding: 15px 0 0;
+    &-bold{
+      color: #262a31;
+      font-weight: 700;
+    }
+  }
+}
+@media screen and (min-width:0\0) {
+  .aloe__text-bg{
+    background: none;
+    -webkit-text-fill-color: #2c2f35;
+  }
+}
+
+.effect-ingridients{
+  display: flex;
+  //justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  &__item{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.image-staff{
+  background: url("../img/in-maslo.png") no-repeat center;
+  width: 220px;
+  height: 220px;
+  border: 26px solid #e5efca;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 71px 0 0;
+  flex-shrink: 0;
+}
