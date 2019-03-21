@@ -1,0 +1,173 @@
+.use{
+  padding: 103px 0 144px;
+  background: #f4f5f7 url("../img/bgn-1.png")  no-repeat;
+  background-size: cover;
+  background-position-y: 34px;
+  background-position-x: center;
+}
+
+.use__block{
+  display: flex;
+  justify-content: center;
+  margin: 54px 0 0;
+  &-item{
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__img{
+      width: 295px;
+      height: 295px;
+      background: #ffffff url("../img/hand-1.jpg")  no-repeat 66px 25px;
+      border-radius: 50%;
+      border: 12px solid #efdcd1;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    .use-bg-2{
+      background: #ffffff url("../img/hand-2.jpg") no-repeat 27px 0;
+    }
+    .use-bg-3{
+      background: #ffffff url("../img/hand-3.jpg") no-repeat 17px 102px;
+    }
+    &__cont{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    &__number{
+      color: #2c2f35;
+      font-size: 60px;
+      font-weight: 300;
+      margin: 12px 0 0;
+      &:after{
+        height: 4px;
+        display: block;
+        margin: 10px auto 15px;
+        width: 70px;
+        content: "";
+        background: #915e35;
+      }
+    }
+    &__text{
+      color: #2c2f35;
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+}
+.calendar{
+  width: 60px;
+  height: 63px;
+  background: url("../img/calendar.svg") no-repeat ;
+  margin: 30px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__text{
+    font-size: 12px;
+    font-weight: 500;
+    color: #2c2f35;
+    margin: 4px 0 0;
+  }
+  &__days{
+    color: #2c2f35;
+    font-weight: 900;
+    font-size: 28px;
+    margin: 3px 0 0;
+  }
+}
+.use__center{
+  margin: 0 60px 0;
+}
+
+@media screen and (max-width: 1190px){
+  .use__block-item__text{
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .use__block-item {
+    width: 251px;
+  }
+  .use__block-item .use-bg-2,
+  .use__block-item .use-bg-3,
+  .use__block-item__img {
+    width: 234px;
+    height: 234px;
+    background-position: center;
+  }
+  .use__block-item .use-bg-3{
+    background-position: center 84px;
+  }
+  .use__center {
+    margin:  16px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .use__block-item .use-bg-2, .use__block-item .use-bg-3, .use__block-item__img {
+    width: 190px;
+    height: 190px;
+  }
+  .use__center{
+    margin: 0;
+  }
+  .use__block-item__number{
+    font-size: 42px;
+  }
+  .use__block-item__text {
+    font-size: 18px;
+  }
+  .use__block-item__number:after{
+    margin: 0 auto 4px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .use__block{
+    flex-direction: column;
+    margin: 20px 0 0;
+  }
+  .use__block-item{
+    width: 100%;
+    flex-direction: row;
+    margin: 15px 0 0 0;
+  }
+  .use__block-item__cont{
+    align-items: flex-start;
+    text-align: left;
+    margin:  0 0 0 15px;
+  }
+  .use__block-item .use-bg-2, .use__block-item .use-bg-3, .use__block-item__img{
+    flex-shrink: 0;
+    width: 155px;
+    height: 155px;
+    background-size: contain;
+  }
+  .calendar{
+    margin: 5px 0 0;
+  }
+  .use__block-item .use-bg-2{
+    background-position: 14px -2px;
+  }
+  .use__block-item .use-bg-3 {
+    background-position: center 60px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .use__block-item .use-bg-2, .use__block-item .use-bg-3, .use__block-item__img{
+    width: 136px;
+    height: 136px;
+  }
+  .use__block-item__number {
+    font-size: 31px;
+  }
+  .use__block-item__text {
+    font-size: 16px;
+  }
+}

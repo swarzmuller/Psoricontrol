@@ -1,5 +1,5 @@
 .recovery{
-  padding: 1px 0 45px;
+  padding: 1px 0 2px;
   position: relative;
   z-index: 5;
   .title{
@@ -26,7 +26,7 @@
     display: block;
     position: absolute;
     left: 0;
-    bottom:-121px;
+    bottom: -91px;
     z-index: -1;
   }
 }
