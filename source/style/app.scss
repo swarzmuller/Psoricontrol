@@ -106,6 +106,12 @@ input::-ms-clear {
 @import "common/6_effect.scss";
 @import "common/7_recovery.scss";
 @import "common/8_use.scss";
+@import "common/9_expert.scss";
+@import "common/10_reviews.scss";
+@import "common/11_order.scss";
+@import "common/12_main-footer.scss";
+@import "common/13_footer.scss";
+@import "common/popup.scss";
 
 
 
@@ -117,7 +123,7 @@ input::-ms-clear {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1190px){
+@media screen and (max-width: 1199px){
   .wrapper {
     width: 100%;
     padding-right: 10px;

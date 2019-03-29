@@ -1,0 +1,53 @@
+.pop-good{
+  width: 710px;
+  height: 345px;
+  background: #fff;
+  position: relative;
+  border-radius: 12px;
+  .main-footer-form{
+    position: absolute;
+    top: -43px;
+    right: 0;
+  }
+  .main-pack{
+    left: 105px;
+    top: 0;
+    background: url(../img/aloe.png) 96px 0px no-repeat;
+    background-size: contain;
+    width: 430px;
+    height: 476px;
+    img{
+      max-width: 100%;
+      width: 371px;
+    }
+  }
+  .logo{
+    padding: 14px 0 0 17px;
+    &:after{
+      display: none;
+    }
+  }
+}
+
+.ever-popup{
+  background: rgba(233, 224, 215, 0.68) !important;
+}
+
+@media screen and (max-width: 1023px){
+  .pop-good{
+    width: auto;
+    height: auto;
+    background: none;
+    position: relative;
+    border-radius: 12px;
+    .main-footer-form{
+      position: static;
+    }
+    .main-pack{
+      display: none;
+    }
+    .logo{
+      display: none;
+    }
+  }
+}

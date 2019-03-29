@@ -1,0 +1,156 @@
+.expert{
+  padding: 54px 0 99px;
+  position: relative;
+  z-index: 5;
+  &:before {
+    background: url("../img/top-vawe.png") center no-repeat;
+    background-size: cover;
+    content: '';
+    height: 154px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -70px;
+    z-index: -1;
+  }
+  &:after{
+    background: url(../img/bottom-vawe.png) center no-repeat;
+    //background-size: cover;
+    content: '';
+    height: 154px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -52px;
+    z-index: -1;
+  }
+}
+
+.expert__block{
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  margin: 54px 0 0;
+  z-index: auto;
+}
+.expert__image{
+  position: absolute;
+  left: -45px;
+  top: -60px;
+  text-align: center;
+  z-index: 0;
+  &:after{
+    background: url(../img/kuschi.png) no-repeat;
+    content: '';
+    display: block;
+    width: 679px;
+    height: 446px;
+    position: absolute;
+    top: 148px;
+    left: -270px;
+    z-index: -1;
+  }
+}
+.expert__text{
+  width: 770px;
+}
+.expert__text-head{
+  font-weight: 700;
+  color: #313e47;
+  font-size: 34px;
+}
+
+.expert__text-head-mini{
+  color: #864f30;
+  font-size: 20px;
+  font-style: italic;
+  margin: 3px 0 0;
+  &:after{
+    height: 4px;
+    display: block;
+    margin: 15px 0 44px;
+    width: 70px;
+    content: "";
+    background: #acdc2c;
+  }
+}
+.medium-exp{
+  font-weight: 500;
+  color: #262a31;
+}
+.expert__text-descr{
+  color: #747678;
+  font-size: 18px;
+  margin: 32px 0 0;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 1199px){
+  .expert:before,
+  .expert:after{
+    display: none;
+  }
+  .expert__image{
+    position: absolute;
+    left: -45px;
+    top: auto;
+    bottom: -99px;
+    width: 376px;
+  }
+  .expert__image img{
+    max-width: 100%;
+  }
+  .expert__image:after {
+    background: url(../img/kuschi.png) no-repeat;
+    width: 421px;
+    height: 313px;
+    top: 148px;
+    left: -152px;
+    z-index: -1;
+    background-size: contain;
+  }
+  .expert__text {
+    width: 670px;
+  }
+  .expert__block {
+    margin: 22px 0 0;
+  }
+  .expert__text-descr {
+    margin: 10px 0 0;
+  }
+  .expert__text-head-mini:after{
+    margin: 8px 0;
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .expert__image{
+    display: none;
+  }
+  .expert__text{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .expert__text-head{
+    font-size: 24px;
+  }
+  .expert__text-head-mini{
+    font-size: 18px;
+  }
+  .expert__text-descr {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+
+}
+
+@media screen and (max-width: 479px) {
+
+}

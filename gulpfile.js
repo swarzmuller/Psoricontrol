@@ -27,6 +27,7 @@ $.gulp.task('default', $.gulp.series(
     'js:foundation',
     'js:process',
     'copy:image',
+    'copy:localization',
     'css:foundation'
   ),
   $.gulp.parallel(

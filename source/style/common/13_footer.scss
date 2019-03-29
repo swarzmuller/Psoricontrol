@@ -1,0 +1,71 @@
+.footer{
+  padding: 0 0 75px;
+  position: relative;
+  &:before{
+    background: url(../img/top-vawe.png) center no-repeat;
+    background-size: cover;
+    content: '';
+    height: 154px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -88px;
+    z-index: 0;
+  }
+  &-text{
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  &-privacy{
+    font-size: 18px;
+    color: #747678;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 30px;
+  }
+}
+.privacy{
+  &:hover{
+    text-decoration: underline;
+  }
+}
+.med{
+  font-weight: 500;
+}
+.orange{
+  color: #b17c3c;
+}
+
+@media screen and (max-width: 1190px){
+  .footer:before{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 1023px){
+  .footer-text{
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-privacy{
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 639px) {
+
+}
+
+@media screen and (max-width: 479px) {
+  .footer-privacy {
+    font-size: 15px;
+  }
+}
