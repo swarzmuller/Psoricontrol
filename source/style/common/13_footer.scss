@@ -39,6 +39,9 @@
 }
 
 @media screen and (max-width: 1190px){
+  .footer.block{
+    padding-bottom: 25px;
+  }
   .footer:before{
     display: none;
   }
@@ -53,6 +56,10 @@
   }
   .footer-privacy{
     margin: 0;
+  }
+  .footer.block{
+    padding-bottom: 25px;
+    padding-top: 25px;
   }
 }
 

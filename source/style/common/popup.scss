@@ -32,8 +32,21 @@
 .ever-popup{
   background: rgba(233, 224, 215, 0.68) !important;
 }
+.ever-popup__close{
+  top: -57px!important;
+  z-index: 15!important;
+  right: 0 !important;
+}
+.ever-popup__close:after, .ever-popup__close:before{
+  background: #bfe62f!important;
+  width: 28px!important;
+  height: 3px!important;
+}
 
 @media screen and (max-width: 1023px){
+  .ever-popup__close{
+    top: 48px!important;
+  }
   .pop-good{
     width: auto;
     height: auto;
@@ -51,3 +64,4 @@
     }
   }
 }
+

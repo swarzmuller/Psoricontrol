@@ -44,6 +44,13 @@
       font-size: 16px;
       line-height: 21px;
       margin: -10px 0 0 12px;
+      transition: 0.3s;
+      &:hover{
+        .dashed{
+          border-bottom: 2px solid transparent;
+        }
+      }
+
     }
 
   }
@@ -87,6 +94,7 @@
   .menu{
     flex-direction: column;
     margin: 0;
+    display: none;
   }
   .menu__item{
     margin: 12px 0 0;

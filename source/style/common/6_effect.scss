@@ -112,6 +112,7 @@
 }
 .text-staff{
   text-align: center;
+  width: 100%;
   &__head{
     font-size: 28px;
     color: #2c2f35;
@@ -137,7 +138,10 @@
   }
 }
 
-@media screen and (max-width: 1190px){
+@media screen and (max-width: 1199px){
+  .effect .title{
+    margin: 0;
+  }
   .aloe{
     margin: 15px 0 ;
   }
@@ -149,11 +153,16 @@
     width: 271px;
     font-size: 20px;
   }
-  .effect-ingridients .effect-center{
-    margin: 15px 10px 0;
-  }
+
   .effect-ingridients__item{
-    margin: 15px 10px 0;
+    width: 300px;
+  }
+  .text-staff__head{
+    margin: 28px 0 0;
+    font-size: 26px;
+  }
+  .text-staff__head:after{
+    margin: 15px auto;
   }
 }
 
@@ -165,6 +174,7 @@
     background-size: contain;
     width: 215px;
     height: 215px;
+    left: 35%;
     img{
       max-width: 100%;
     }
@@ -182,6 +192,10 @@
   }
   .effect-ingridients__item{
     width: 340px;
+    margin: 25px 10px 0;
+  }
+  .effect-ingridients .effect-center{
+    margin: 25px 10px 0;
   }
 }
 
@@ -190,6 +204,9 @@
     justify-content: space-around;
     padding: 10px 0;
   }
+  .text-staff__head br{
+    display: none;
+  }
   .aloe__img{
     width: 155px;
     height: 155px;
@@ -197,6 +214,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    left: 37%;
   }
   .aloe__text-bg {
     line-height: 28px;
@@ -265,8 +283,9 @@
     align-items: flex-start;
     margin: 0 0 0 20px;
   }
-  .aloe__text-bg{
+  .aloe__text-bg {
     width: 100%;
+    background-position: -257px -279px;
   }
   .aloe__text{
     width: 100%;
@@ -302,5 +321,8 @@
   }
   .effect-ingridients__item, .effect-ingridients .effect-center{
     margin: 15px auto 0;
+  }
+  .effect-ingridients__item{
+    min-height: 115px;
   }
 }

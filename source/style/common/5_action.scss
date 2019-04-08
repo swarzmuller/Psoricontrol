@@ -111,7 +111,9 @@
 .slick-dots li.slick-active button:before {
   display: none;
 }
-
+.action__slider .slick-dots{
+  bottom: -44px;
+}
 .slick-dots li {
   border: 1px solid #ccd2de;
   border-radius: 50%;
@@ -186,11 +188,17 @@
   .action:after{
     display: none;
   }
+  .action__block{
+    margin: 45px 0 0;
+  }
   .action-slider__block{
     width: 510px;
   }
   .slick-slide img {
     max-width: 100%;
+  }
+  .action-slider__block:after{
+    left: -378px;
   }
 
 }
@@ -208,6 +216,9 @@
   }
   .action-slider__block{
     margin: 0;
+  }
+  .action-list{
+    width: 513px;
   }
   .action-list__item {
     margin: 0 0 20px;

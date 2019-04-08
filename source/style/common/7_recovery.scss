@@ -74,13 +74,14 @@
   color: #2c2f35;
   font-weight: 500;
   padding: 0 31px;
+  width: 100%;
 }
 
 .recovery__btn{
   margin: 54px auto 0;
 }
 
-@media screen and (max-width: 1190px){
+@media screen and (max-width: 1199px){
   .recovery:before,
   .recovery:after{
     display: none;
@@ -97,6 +98,9 @@
   .recovery-img img{
     max-width: 100%;
   }
+  .recovery__btn {
+    margin: 33px auto 0;
+  }
 }
 
 @media screen and (max-width: 1023px){
@@ -110,6 +114,9 @@
   .recovery-number:after{
     margin: 10px auto;
   }
+  .recovery__btn {
+    margin: 21px auto 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -122,6 +129,7 @@
   .recovery-number:after {
     margin: 5px auto;
   }
+
 }
 
 @media screen and (max-width: 639px) {
@@ -152,6 +160,13 @@
 }
 
 @media screen and (max-width: 479px) {
+  .recovery-things{
+    margin: 10px 0 0;
+  }
+  .recovery-things__item{
+    margin: 10px 0 0;
+  }
+
   .recovery-number {
     font-size: 29px;
   }
